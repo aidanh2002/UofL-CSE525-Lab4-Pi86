@@ -76,7 +76,7 @@ The pinout used for Wiring Pi is seen here:
 
 ![description](https://github.com/bytemaster0/UofL-CSE525-Lab4-Pi86/blob/main/images/pipins.png)
 
-You can see the pinout from the daughterboard here. I've flipped it so that the pins are what you see with a top-down view of the header. The labels are backwards, but the positions are correct.
+You can see the pinout from the daughterboard here. The pinout corresponds to reading the pins *from above* the header pins, as they would naturally appear on the Pi. 
 
 ![description](https://github.com/bytemaster0/UofL-CSE525-Lab4-Pi86/blob/main/images/adapter_pinout_readable.png)
 
