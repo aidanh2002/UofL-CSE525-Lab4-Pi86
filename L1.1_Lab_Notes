@@ -1,0 +1,82 @@
+# Lab 3 - Part 1.1 bring-up record
+
+## Before the lab
+
+- [ ] Instructor repository forked; origin verified as my fork.
+- [ ] Fork opened in VS Code through Ubuntu WSL.
+- [ ] README, Getting Started, and Parts 1.1-1.4 read.
+- [ ] PulseView installed in Windows; analyzer-specific Blackboard notes checked.
+- [ ] NASM available; supplied Programs 1 and 2 built for group preparation.
+- [ ] Logger enable-condition checked; correction prepared if needed.
+- [ ] Pi86 microSD, Pi 3B/+, V20 daughterboard, analyzer, probes, grounds, monitor, keyboard, and power supply available.
+
+## Hardware and software observations - fill in from the real experiment
+
+Date/time:
+Pi model:
+SD image identification:
+Analyzer model:
+Analyzer application/version:
+Actual runtime directory:
+PI86_LOG launch value:
+Actual logger startup message:
+Sample rate:
+Sample count:
+Actual capture duration:
+Trigger:
+Pre-trigger setting or device limitation:
+Threshold, if adjustable:
+
+| Channel | Signal | Physical header pin | Ground arrangement / notes |
+|---|---|---|---|
+| 0 | CLK | 40 | |
+| 1 | ALE | 32 | |
+| 2 | AD0 | 37 | |
+| 3 | AD7 | 21 | |
+| 4 | A15 | 8 | |
+| 5 | IO/M | 24 | |
+| 6 | DT/R | 26 | |
+| 7, if used | A19 | 18 | |
+
+- [ ] Physical orientation and pin-1 reference confirmed against the actual board.
+- [ ] Ground leads connected to verified GND points; no supply pin used as GND.
+- [ ] Probes attached only with Pi power and analyzer USB disconnected.
+- [ ] Pi86 was stopped before arming the boot capture.
+- [ ] Analyzer armed before launching PI86_LOG=0 ./run_pi86.sh.
+- [ ] Actual terminal output confirmed bus logging disabled.
+- [ ] DOS A:\> prompt reached.
+
+## Evidence
+
+Raw boot session filename:
+Additional startup capture, if needed:
+Exported waveform filename/format:
+Memory-read screenshot filename:
+I/O-write screenshot filename:
+Hardware/DOS photo or recording filename:
+
+Memory-read cycle time position:
+Observed IO/M:
+Observed DT/R:
+Observed address-bit values:
+Observed data-bit values:
+Reason for identifying it as a BIOS fetch:
+
+I/O-write cycle time position:
+Observed IO/M:
+Observed DT/R:
+Observed address-bit values:
+Observed data-bit values:
+Reason for identifying it as boot initialization:
+
+- [ ] Both cycles labeled and bracketed.
+- [ ] ALE pulse, address phase, and actual data phase marked for each example.
+- [ ] All displayed signals have readable labels.
+- [ ] Time units and settings recorded.
+- [ ] Hex values are supported by actual probed bits or clearly marked as expected/contextual.
+- [ ] Raw evidence is saved on the laptop.
+- [ ] Part 1.1 evidence handed off before the group proceeds to 1.2.
+
+Unexpected behavior and resolution:
+
+Shutdown and handoff notes:
