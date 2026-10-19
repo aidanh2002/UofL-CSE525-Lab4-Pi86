@@ -116,7 +116,8 @@ static thread s_flush_thread;
 // ---------------------------------------------------------------------------
 void BusLog_Init()
 {
-    if (!getenv("PI86_LOG")) {
+        const char *log_setting = getenv("PI86_LOG"); // Read the requested logging mode.
+    if (!log_setting || strcmp(log_setting, "1") != 0) { // Enable only for PI86_LOG=1.
         printf("[buslog] Bus logging disabled. "
                "Run with PI86_LOG=1 to enable (see GETTING_STARTED.md).\n");
         return;
